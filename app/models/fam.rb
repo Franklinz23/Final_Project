@@ -1,0 +1,2 @@
+class Fam < User
+end
