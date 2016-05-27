@@ -1,5 +1,16 @@
 @import "bootstrap";
 
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient( 45deg, purple, orange );
+}
+
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -12,4 +23,38 @@
 .style_image{
   width: 1500px;
   max-height: 600px;
+}
+
+/* User sign in and sign out forms. */
+.border-form-div {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.border-form-div-edit {
+	max-width: 800px;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #e5e5e5;
 }
