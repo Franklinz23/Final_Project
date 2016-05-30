@@ -27,11 +27,16 @@
         <li class="nav-item"><%= link_to "Join Us", root_path, :class => 'nav-link' %></li>
         <li class="nav-item"><%= link_to "For Parents", root_path, :class => 'nav-link' %></li>
         <li class="nav-item"><%= link_to "Contact", root_path, :class => 'nav-link' %></li>
-        <li class="nav-item pull-md-right">
-        <a class="nav-link" href="#">Profile</a>
-        </li>
-        <li class="nav-item pull-md-right"><%= link_to "Log In", new_user_session_path, :class => 'nav-link' %></li>
-        <li class="nav-item pull-md-right"><%= link_to "Sign Up", new_user_registration_path, :class => 'nav-link' %></li>
+        <% if user_signed_in? %>
+          <li class="nav-item active pull-xs-right"> <%= link_to "Log Out", destroy_user_session_path, method: :delete, :class => "nav-link" %> </li>
+          <li class="nav-item active pull-xs-right"> <%= link_to "Welcome #{current_user.email}!", root_path, :class => "nav-link" %> </li>
+        <% else %>
+          <li class="nav-item pull-md-right"><%= link_to "Log In", new_user_session_path, :class => 'nav-link' %></li>
+        <% end %>
+
+        <% if current_user.email === 'admin@aol.com' %>
+          <li class="nav-item pull-md-right"><%= link_to "Create Account", new_user_registration_path, :class => 'nav-link' %></li>
+        <% end %>
       </ul>
     </div>
   </nav>

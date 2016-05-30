@@ -11,6 +11,15 @@ body {
     background: linear-gradient( 45deg, purple, orange );
 }
 
+.row {
+  padding: 50px;
+}
+
+#staff-img{
+  height: 300px;
+  width: 300px;
+}
+
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -24,6 +33,15 @@ body {
   width: 1500px;
   max-height: 600px;
 }
+
+#school-description{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#staff-description{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 
 /* User sign in and sign out forms. */
 .border-form-div {
