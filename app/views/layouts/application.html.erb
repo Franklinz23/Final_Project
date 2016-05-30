@@ -17,14 +17,13 @@
 
     <div class="collapse navbar-toggleable-xs" id="nav-content">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">School Logo</a>
+      <a class="navbar-brand" href="/">School Logo</a>
       <br/>
       <!-- Links -->
       <ul class="nav navbar-nav">
         <li class="nav-item"> <%= link_to "Home", root_path, :class => 'nav-link' %> </li>
-        <li class="nav-item"><%= link_to "About", root_path, :class => 'nav-link' %></li>
-        <li class="nav-item"><%= link_to "Enroll", root_path, :class => 'nav-link' %></li>
-        <li class="nav-item"><%= link_to "Join Us", root_path, :class => 'nav-link' %></li>
+        <li class="nav-item"><%= link_to "About", about_path, :class => 'nav-link' %></li>
+        <li class="nav-item"><%= link_to "Join Us", join_path, :class => 'nav-link' %></li>
         <li class="nav-item"><%= link_to "For Parents", root_path, :class => 'nav-link' %></li>
         <li class="nav-item"><%= link_to "Contact", root_path, :class => 'nav-link' %></li>
         <% if user_signed_in? %>

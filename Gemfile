@@ -31,6 +31,8 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 gem "font-awesome-rails"
 
+gem 'hirb'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
