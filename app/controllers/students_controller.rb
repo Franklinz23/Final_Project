@@ -8,4 +8,8 @@ class StudentsController < ApplicationController
     render :about
   end
 
+  def join
+    render :join
+  end
+
 end

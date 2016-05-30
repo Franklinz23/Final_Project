@@ -1,15 +1,6 @@
 @import "bootstrap";
 
-html {
-    height: 100%;
-}
-body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: linear-gradient( 45deg, purple, orange );
-}
+
 
 .row {
   padding: 50px;
@@ -27,6 +18,11 @@ body {
     top: 0;
     text-align: center;
     margin: auto;
+
+}
+
+.navbar{
+  background: linear-gradient( 45deg, purple, orange );
 }
 
 .style_image{
@@ -40,6 +36,11 @@ body {
 
 #staff-description{
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#join-nav{
+  background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 
