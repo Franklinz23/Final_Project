@@ -7,7 +7,7 @@
 
     <% meetings.each do |meeting| %>
       <ul>
-        <li><%= meeting.name %></li>
+        <li><%= link_to meeting.name, meeting_path(meeting) %></li>
       </ul>
     <% end %>
   <% end %>
@@ -28,12 +28,15 @@
   <tbody>
     <% @meetings.each do |meeting| %>
       <tr>
+
         <td><p class="lead"> <%= meeting.name %> </p></td>
         <td><p class="lead"><%= meeting.start_time.strftime("at %I:%M%p")  %></p></td>
+
         <% if current_user && current_user[:type] === "Teacher" %>
-        <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
-        <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+          <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
+
       </tr>
     <% end %>
   </tbody>
@@ -42,6 +45,6 @@
 <br>
 
 <% if current_user && current_user[:type] === "Teacher" %>
-<%= link_to 'New Meeting', new_meeting_path %>
+<%= button_to 'New Event', new_meeting_path, :class => 'btn btn-primary pull-xs-right' %>
 <% end %>
 </div>

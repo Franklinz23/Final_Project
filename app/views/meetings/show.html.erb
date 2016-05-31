@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Name:</strong> </br>
   <%= @meeting.name %>
 </p>
 
 <p>
-  <strong>Start time:</strong>
-  <%= @meeting.start_time %>
+  <strong>Start time:</strong> </br>
+  <%= @meeting.start_time.strftime("%I:%M%p") %>
 </p>
 
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
 <%= link_to 'Back', meetings_path %>

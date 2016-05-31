@@ -24,7 +24,7 @@
         <li class="nav-item"> <%= link_to "Home", root_path, :class => 'nav-link' %> </li>
         <li class="nav-item"><%= link_to "About", about_path, :class => 'nav-link' %></li>
         <li class="nav-item"><%= link_to "Join Us", join_path, :class => 'nav-link' %></li>
-        <li class="nav-item"><%= link_to "For Parents", root_path, :class => 'nav-link' %></li>
+        <li class="nav-item"><%= link_to "Upcoming Events", meetings_path, :class => 'nav-link' %></li>
         <li class="nav-item"><%= link_to "Contact", root_path, :class => 'nav-link' %></li>
         <% if user_signed_in? %>
           <li class="nav-item active pull-xs-right"> <%= link_to "Log Out", destroy_user_session_path, method: :delete, :class => "nav-link" %> </li>
