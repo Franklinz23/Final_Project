@@ -12,4 +12,8 @@ class StudentsController < ApplicationController
     render :join
   end
 
+  def parents
+    render :parents
+  end
+
 end

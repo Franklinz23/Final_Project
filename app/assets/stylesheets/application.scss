@@ -1,5 +1,6 @@
 @import "font-awesome";
 @import "bootstrap";
+@import "simple_calendar";
 
 
 .row {
@@ -44,6 +45,10 @@
 
 #join-nav{
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#join-nav .nav-link{
+  color: blue;
 }
 
 #footer{
