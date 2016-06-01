@@ -4,4 +4,12 @@ class StudentsController < ApplicationController
     render :index
   end
 
+  def about
+    render :about
+  end
+
+  def join
+    render :join
+  end
+
 end

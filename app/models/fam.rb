@@ -1,2 +1,0 @@
-class Fam < User
-end

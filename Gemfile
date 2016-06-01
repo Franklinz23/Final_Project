@@ -29,6 +29,12 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
+gem "font-awesome-rails"
+
+gem 'hirb'
+
+gem "simple_calendar", "~> 2.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
