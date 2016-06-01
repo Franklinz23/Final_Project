@@ -1,13 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong> </br>
-  <%= @meeting.name %>
-</p>
-
-<p>
-  <strong>Start time:</strong> </br>
-  <%= @meeting.start_time.strftime("%I:%M%p") %>
-</p>
+<div class="card card-block text-xs-center">
+  <h4 class="card-title"><%= @meeting.name %> <%= @meeting.start_time.strftime("at %I:%M%p") %></h4>
+  <p class="card-text"><%= @meeting.description %></p>
+</div>
 
 <%= link_to 'Back', meetings_path %>
