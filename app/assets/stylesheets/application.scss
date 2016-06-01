@@ -2,6 +2,16 @@
 @import "bootstrap";
 @import "simple_calendar";
 
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#wrapper {
+   min-height:100%;
+   position:relative;
+}
 
 .row {
   padding: 50px;
@@ -29,8 +39,8 @@
 }
 
 .style_image{
-  width: 1500px;
-  max-height: 600px;
+  width: 500px;
+  max-height: 300px;
 }
 
 #school-description{
