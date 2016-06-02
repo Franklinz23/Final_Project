@@ -17,6 +17,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @family = Family.find_by_id params[:id]
+    @teacher = Teacher.find_by_id params[:id]
+    render :show
+  end
+
   private
 
   # This should probably be abstracted to ApplicationController

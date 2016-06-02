@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   resources :users, except: :create
 
   post 'create_user' => 'users#create', as: 'create_user'
+
+
+
 end

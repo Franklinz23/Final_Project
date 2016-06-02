@@ -1,0 +1,57 @@
+</br>
+<% if @teacher %>
+  <h1>Hello, <%= "#{@teacher.f_name}" %></h1>
+<% end %>
+
+<div class="col-md-3">
+</div>
+
+<div class="col-md-6">
+
+  <div class="card card-block">
+
+    <%= button_to 'Add New Student', :class => 'btn btn-success pull-xs-right' do %>
+    <i class="fa fa-plus" aria-hidden="true"></i>
+    <% end %>
+
+    <h4 class="card-title"> Students: </h4>
+      <% @teacher.students.each do |student| %>
+
+      <p class="card-text"> <%= link_to student.f_name, root_path %> <%= student.l_name %> </p>
+
+
+  <% end %>
+  </div>
+</div>
+
+<div class="col-md-3">
+</div>
+
+<br />
+
+
+
+
+<% if @family %>
+  <h1>Hello, <%= "#{@family.f_name}" %></h1>
+  <br/>
+  <div class="container">
+    <h2>Student</h2>
+    <div class="col-md-4">
+      <%= image_tag 'antonio.jpg' %>
+    </div>
+    <div class="col-md-8">
+      <p> Class </p>
+      <p> Description </p>
+      <p> Grade </p>
+      <p> Teacher Contact </p>
+    </div>
+  </div>
+  <br/>
+  <div class="col-md-12">
+    <h3 class="text-xs-center"> Notes on Student:</h3>
+    <p class="text-xs-center">
+      kfmamfgkdsmogfmdksfdskjfs
+    </p>
+  </div>
+<% end %>
