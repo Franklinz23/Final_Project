@@ -7,7 +7,8 @@ Student.destroy_all
 
 admin = Teacher.create({
   email: "admin@aol.com",
-  password: "boomin"
+  password: "boomin",
+  admin: true
   })
 
 puts "Seeded the admin account with id #{admin.id}"
