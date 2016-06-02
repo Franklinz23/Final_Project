@@ -4,12 +4,12 @@
   <%= form_for @user, url: create_user_path do |f| %>
 
     <div class="field">
-      <%= f.label :f_name %><br />
+      <%= f.label "First Name" %><br />
       <%= f.text_field :f_name %>
     </div>
 
     <div class="field">
-      <%= f.label :l_name %><br />
+      <%= f.label "Last Name" %><br />
       <%= f.text_field :l_name %>
     </div>
 
@@ -29,7 +29,7 @@
     </div>
 
     <div class="field">
-      <%= f.label :type %><br />
+      <%= f.label :type %> <br />
       <%= f.text_field :type %>
     </div>
 
