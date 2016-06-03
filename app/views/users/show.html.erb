@@ -10,7 +10,7 @@
   <div class="card card-block">
 
     <p class="lead"><strong>Class:</strong> <%= @teacher.class_name %></p>
-    <%= button_to 'Add New Student', :class => 'btn btn-success pull-xs-right' do %>
+    <%= button_to new_user_student_path(@teacher), :method => 'get', :class => 'btn btn-success pull-xs-right' do %>
     <i class="fa fa-plus" aria-hidden="true"></i>
     <% end %>
     <h4 class="card-title"> Students: </h4>

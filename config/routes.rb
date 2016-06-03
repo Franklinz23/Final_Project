@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   get '/join', to: 'students#join', as: 'join'
 
   devise_for :users
-  resources :users, except: :create
+  resources :users, except: :create do
+    resources :students
+  end
 
   post 'create_user' => 'users#create', as: 'create_user'
 
