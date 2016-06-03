@@ -1,47 +1,76 @@
-<div class="container-fluid">
-    </br>
-  <h1 class="text-xs-center"> Welcome to Sacred Heart Education Center</h1>
-  </br>
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
+<div class="container-fluid" id="home"></br>
+<h1 class="text-xs-center">
+    Welcome to Sacred Heart Education Center</h1>
+</br>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <div class="col-md-6">
-        <%= image_tag 'toddler1.png', :class => "style_image"%>
+          <div class="container">
+            <div class="col-md-6">
+                <%= image_tag 'toddler1.jpg', :class => "style_image"%>
+            </div>
+            <div class="col-md-6" id="carousel-info">
+                <h2>Harvest time</h2>
+                <p>
+                    Our students and families have worked all summer caring for and preparing the garden for harvest time. Join us in our monthly gardening session and take home fresh greens.</p>
+            </div>
         </div>
-        <div class="col-md-6" id="carousel-info">
-          <h2>Interested in enrolling your child?</h2>
-          <p> hjglajfjdisacvndsjalnlfslajvnfjsannsjdnsals</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'toddler3.jpg', :class => "style_image"%>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'toddler2.jpg', :class => "style_image"%>
-      </div>
     </div>
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="icon-prev" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="icon-next" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-<br />
-<br />
+      <div class="carousel-item">
+          <div class="container">
+            <div class="col-md-6" id="carousel-info">
+                <h2>Friction and Air Resistance</h2>
+                <p>
+                    Our fifth graders are putting gravity to the test. See what they have been experimenting with and explore their findings.</p>
+            </div>
+            <div class="col-md-6">
+                <%= image_tag 'toddler3.jpg', :class => "style_image"%>
+            </div>
+        </div>
+    </div>
+      <div class="carousel-item">
+          <div class="container">
+            <div class="col-md-6" id="carousel-info">
+                <h2>Finding Contentment in Womanhood</h2>
+                <p>
+                    Our mothers and women came together to discuss and learn about finding peace and contentment in the face of conflict and stress, and the benefits of picking up habits of gratefulness. Read more..</p>
+            </div>
+            <div class="col-md-6">
+                <%= image_tag 'toddler2.jpg', :class => "style_image"%>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>
+<br/>
+<br/>
+<div class="container">
 
-  <div class="row">
+<div class="row">
     <div class="col-md-4">
-      <h1> <%= link_to "Take A look at our upcoming events!", meetings_path %> </h1>
+        <%= button_to "Take a look at our upcoming events!", meetings_path, :class => 'btn btn-warning', :method => 'get' %>
+    </div>
+    <div class="col-md-4">
+        <%= button_to "Find ways to get involved!", join_path, :class => 'btn btn-warning', :method => 'get' %>
+    </div>
+    <div class="col-md-4">
+        <%= button_to "Learn More About Us!", about_path, :class => 'btn btn-warning', :method => 'get' %>
     </div>
 
-  </div>
+</div>
+</div>
 
 </div>
