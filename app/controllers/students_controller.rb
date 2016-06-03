@@ -2,8 +2,6 @@ class StudentsController < ApplicationController
 
   def new
     @student = Student.new
-    teach_id = params[:user_id]
-    @teacher = Teacher.find_by(id: teach_id)
     render :new
   end
 
@@ -34,7 +32,7 @@ class StudentsController < ApplicationController
     render :join
   end
 
-  private
+private
 
   def student_params
     params.require(:student).permit(:f_name, :l_name, :grade, :notes)
