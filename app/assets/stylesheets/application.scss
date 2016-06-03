@@ -1,17 +1,31 @@
 @import "font-awesome";
 @import "bootstrap";
 @import "simple_calendar";
+@import url(https://fonts.googleapis.com/css?family=Signika:300,700,400);
 
 html,
 body {
    margin:0;
    padding:0;
    height:100%;
-   background-image: url('background.jpeg');
+   background-image: url('lotusbackground.jpg');
    background-size: auto;
    background-repeat: no-repeat;
 
 }
+
+h1 h2 h3{
+
+  font-family: 'Signika', sans-serif; font-weight: 700;
+
+}
+
+p{
+  font-family: 'Signika', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
 #wrapper {
    min-height:100%;
    position:relative;
@@ -26,13 +40,6 @@ body {
   width: 300px;
 }
 
-.navbar-brand {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -100px;
-  margin-top: -53px;
-}
 
 .navbar{
   background-image: url('lotusnav.jpg');
@@ -74,6 +81,14 @@ body {
 
 .card{
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#carousel-example-generic{
+  background:linear-gradient( 45deg, rgba(255, 165, 0, 0.7), rgba(253,106,42, 0.7) 30%);
+}
+
+#calendar{
+  background:linear-gradient( 45deg, rgba(255, 165, 0, 0.7), rgba(253,106,42, 0.7) 50%);
 }
 
 
