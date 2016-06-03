@@ -37,9 +37,9 @@
 
 ## Test User to create teachers/families
 
-Email | Password | Type
+Email | Password
 --- | ---
-admin@aol.com | boomin | Admin
+admin@aol.com | boomin
 
 ## Wireframe Links
 * [Home](https://wireframe.cc/cbER7A)
