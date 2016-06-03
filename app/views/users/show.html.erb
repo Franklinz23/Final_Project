@@ -1,7 +1,6 @@
 </br>
 <% if @teacher %>
   <h1>Hello, <%= "#{@teacher.f_name}" %></h1>
-<% end %>
 
 <div class="col-md-3">
 </div>
@@ -10,10 +9,10 @@
 
   <div class="card card-block">
 
-    <%= button_to 'Add New Student', :class => 'btn btn-success pull-xs-right' do %>
+    <p class="lead"><strong>Class:</strong> <%= "#{@teacher.class_name}" %></p>
+    <%= button_to teacher_student_path(@teacher), :method => 'get', :class => 'btn btn-success pull-xs-right' do %>
     <i class="fa fa-plus" aria-hidden="true"></i>
     <% end %>
-
     <h4 class="card-title"> Students: </h4>
       <% @teacher.students.each do |student| %>
 
@@ -26,6 +25,8 @@
 
 <div class="col-md-3">
 </div>
+
+<% end %>
 
 <br />
 

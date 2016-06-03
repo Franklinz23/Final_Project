@@ -6,9 +6,12 @@ Family.destroy_all
 Student.destroy_all
 
 admin = Teacher.create({
+  f_name: "admin",
+  l_name: "admin",
   email: "admin@aol.com",
   password: "boomin",
-  admin: true
+  admin: true,
+  type: "Teacher"
   })
 
 puts "Seeded the admin account with id #{admin.id}"
@@ -22,7 +25,8 @@ teachers = []
     f_name: FFaker::Name.first_name,
     l_name: FFaker::Name.last_name,
     email: FFaker::Internet.safe_email,
-    password: "boomin"
+    password: "boomin",
+    type: "Teacher"
   }
 end
 
@@ -38,7 +42,8 @@ families = []
     f_name: FFaker::Name.first_name,
     l_name: FFaker::Name.last_name,
     email: FFaker::Internet.safe_email,
-    password: "boomin"
+    password: "boomin",
+    type: "Family"
   }
 end
 

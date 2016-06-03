@@ -4,12 +4,12 @@
   <%= form_for @user, url: create_user_path do |f| %>
 
     <div class="field">
-      <%= f.label "First Name" %><br />
+      <%= f.label :f_name, "First Name" %><br />
       <%= f.text_field :f_name %>
     </div>
 
     <div class="field">
-      <%= f.label "Last Name" %><br />
+      <%= f.label :l_name, "Last Name" %><br />
       <%= f.text_field :l_name %>
     </div>
 
@@ -24,13 +24,18 @@
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br />
+      <%= f.label :password_confirmation, "Confirm Your Password" %><br />
       <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
 
     <div class="field">
       <%= f.label :type %> <br />
       <%= f.text_field :type %>
+    </div>
+
+    <div class="field">
+      <%= f.label :class_name, 'Class(if teacher)' %> <br />
+      <%= f.text_field :class_name %>
     </div>
 
     <div class="actions">
