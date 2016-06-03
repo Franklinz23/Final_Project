@@ -7,6 +7,10 @@ body {
    margin:0;
    padding:0;
    height:100%;
+   background-image: url('background.jpeg');
+   background-size: auto;
+   background-repeat: no-repeat;
+
 }
 #wrapper {
    min-height:100%;
@@ -55,6 +59,10 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+#carousel-info{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 #join-nav .nav-link{
   color: blue;
 }
@@ -62,6 +70,10 @@ body {
 #footer{
   color: white;
   background-image: url('lotusnav.jpg');
+}
+
+.card{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 

@@ -1,4 +1,5 @@
 <div class="container-fluid">
+    </br>
   <h1 class="text-xs-center"> Welcome to Sacred Heart Education Center</h1>
   </br>
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -12,7 +13,7 @@
         <div class="col-md-6">
         <%= image_tag 'toddler1.png', :class => "style_image"%>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="carousel-info">
           <h2>Interested in enrolling your child?</h2>
           <p> hjglajfjdisacvndsjalnlfslajvnfjsannsjdnsals</p>
         </div>
@@ -33,6 +34,14 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+<br />
+<br />
 
-  <br/>
+  <div class="row">
+    <div class="col-md-4">
+      <h1> <%= link_to "Take A look at our upcoming events!", meetings_path %> </h1>
+    </div>
+
+  </div>
+
 </div>
